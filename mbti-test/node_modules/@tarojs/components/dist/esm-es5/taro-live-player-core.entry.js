@@ -1,0 +1,1 @@
+import{r as registerInstance,h,H as Host}from"./index-ab3c86da.js";import{n as notSupport}from"./helper-8a85bb65.js";import"@tarojs/taro";var LivePlayer=function(){function r(r){registerInstance(this,r)}r.prototype.componentDidLoad=function(){notSupport("LivePlayer",this)};r.prototype.render=function(){return h(Host,null)};return r}();export{LivePlayer as taro_live_player_core};

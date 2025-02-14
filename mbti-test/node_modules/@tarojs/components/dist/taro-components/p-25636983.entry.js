@@ -1,0 +1,1 @@
+import{r,h as s,H as o}from"./p-dd7a128d.js";const t=class{constructor(s){r(this,s)}render(){return s(o,null)}};export{t as taro_custom_wrapper_core}

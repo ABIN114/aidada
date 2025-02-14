@@ -1,0 +1,1 @@
+import{r,h as o,H as s}from"./p-dd7a128d.js";import{n as t}from"./p-dbdb9de9.js";import"@tarojs/taro";const a=class{constructor(o){r(this,o)}componentDidLoad(){t("Tabs",this)}render(){return o(s,null)}};export{a as taro_tabs_core}

@@ -1,0 +1,1 @@
+import{r,h as n,H as o}from"./p-dd7a128d.js";import{n as t}from"./p-dbdb9de9.js";import"@tarojs/taro";const a=class{constructor(n){r(this,n)}componentDidLoad(){t("InlinePaymentPanel",this)}render(){return n(o,null)}};export{a as taro_inline_payment_panel_core}

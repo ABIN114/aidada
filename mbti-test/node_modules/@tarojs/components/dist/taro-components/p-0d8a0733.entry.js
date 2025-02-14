@@ -1,0 +1,1 @@
+import{r as o,h as r,H as t}from"./p-dd7a128d.js";import{n as a}from"./p-dbdb9de9.js";import"@tarojs/taro";const s=class{constructor(r){o(this,r)}componentDidLoad(){a("AnimationVideo",this)}render(){return r(t,null)}};export{s as taro_animation_video_core}

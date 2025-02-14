@@ -1,0 +1,1 @@
+import{r,h as o,H as t}from"./p-dd7a128d.js";import{n as s}from"./p-dbdb9de9.js";import"@tarojs/taro";const a=class{constructor(o){r(this,o)}componentDidLoad(){s("LivePlayer",this)}render(){return o(t,null)}};export{a as taro_live_player_core}

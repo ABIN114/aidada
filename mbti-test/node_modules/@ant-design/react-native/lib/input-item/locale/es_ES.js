@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _default={confirmLabel:'OK',backspaceLabel:'Retroceso',cancelKeyboardLabel:'Cancelar Teclado'};exports["default"]=_default;

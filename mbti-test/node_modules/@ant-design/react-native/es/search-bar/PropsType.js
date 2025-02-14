@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.defaultProps=void 0;function noop(){}var defaultProps={placeholder:'',onSubmit:noop,onChange:noop,onFocus:noop,onBlur:noop,onClear:noop,showCancelButton:false,disabled:false};exports.defaultProps=defaultProps;

@@ -1,0 +1,1 @@
+import{r as o,h as r,H as a}from"./p-dd7a128d.js";import{n as t}from"./p-dbdb9de9.js";import"@tarojs/taro";const n=class{constructor(r){o(this,r)}componentDidLoad(){t("FunctionalPageNavigator",this)}render(){return r(a,null)}};export{n as taro_functional_page_navigator_core}

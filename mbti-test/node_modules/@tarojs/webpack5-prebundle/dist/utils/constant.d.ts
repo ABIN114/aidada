@@ -1,0 +1,12 @@
+export declare const virtualModulePrefix = "virtual-module:";
+export declare const virtualModuleRE: RegExp;
+export declare const assetsRE: RegExp;
+export declare const commentRE: RegExp;
+export declare const scriptRE: RegExp;
+export declare const langRE: RegExp;
+export declare const multilineCommentsRE: RegExp;
+export declare const singlelineCommentsRE: RegExp;
+export declare const importsRE: RegExp;
+export declare const moduleRE: RegExp;
+export type CollectedDeps = Map<string, string>;
+export declare const MF_NAME = "taro_app_library";

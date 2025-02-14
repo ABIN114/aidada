@@ -1,0 +1,1 @@
+import{r,h as o,H as a}from"./p-dd7a128d.js";import{n as t}from"./p-dbdb9de9.js";import"@tarojs/taro";const s=class{constructor(o){r(this,o)}componentDidLoad(){t("NavigationBar",this)}render(){return o(a,null)}};export{s as taro_navigation_bar_core}

@@ -1,0 +1,62 @@
+import { PLATFORM_TYPE } from '@tarojs/shared';
+import webpack from 'webpack';
+import { getMeasure, Metadata } from '../utils';
+import { CollectedDeps } from '../utils/constant';
+import type { esbuild, swc } from '@tarojs/helper';
+import type { IProjectBaseConfig } from '@tarojs/taro/types/compile';
+import type { Configuration, EntryObject } from 'webpack';
+import type Chain from 'webpack-chain';
+export type IPrebundle = Exclude<Exclude<IProjectBaseConfig['compiler'], string | undefined>['prebundle'], undefined>;
+export interface IPrebundleConfig {
+    appPath: string;
+    chain: Chain;
+    chunkFilename?: string;
+    enableSourceMap: boolean;
+    entry: EntryObject;
+    entryFileName?: string;
+    env: string;
+    isWatch?: boolean;
+    platformType: PLATFORM_TYPE;
+    sourceRoot: string;
+    isBuildPlugin?: boolean;
+    alias?: Record<string, any>;
+    defineConstants?: Record<string, any>;
+    modifyAppConfig?: (appConfig: any) => Promise<any>;
+}
+type TMode = 'production' | 'development' | 'none';
+export default class BasePrebundle<T extends IPrebundleConfig = IPrebundleConfig> {
+    protected config: T;
+    protected option: IPrebundle;
+    sourceRoot: string;
+    appPath: string;
+    cacheDir: string;
+    chain: Chain;
+    customEsbuildConfig: IPrebundle['esbuild'];
+    customSwcConfig?: swc.Config;
+    env: string;
+    mode: TMode;
+    platformType: PLATFORM_TYPE;
+    mainFields: string[];
+    prebundleCacheDir: string;
+    remoteCacheDir: string;
+    metadataPath: string;
+    metadata: Metadata;
+    preMetadata: Metadata;
+    isUseCache: boolean;
+    deps: CollectedDeps;
+    measure: ReturnType<typeof getMeasure>;
+    webpackConfig: Configuration;
+    constructor(config: T, option: IPrebundle);
+    run(): Promise<void>;
+    addPlugin(name: string, plugin: any, ...args: Record<string, any>[]): void;
+    get entryPath(): string;
+    parseEntries(entry?: EntryObject): string[];
+    /** 找出所有 webpack entry */
+    getEntries(appJsPath: string): Promise<string[]>;
+    setDeps(entries: string[], include?: string[], exclude?: string[]): Promise<void>;
+    bundle(): any;
+    handleBundleError(errors?: esbuild.Message[]): any;
+    setHost(publicPath?: string): void;
+    getRemoteWebpackCompiler(standard: Configuration, custom?: Configuration): webpack.Compiler;
+}
+export {};

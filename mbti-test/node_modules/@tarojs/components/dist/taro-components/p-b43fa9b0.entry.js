@@ -1,0 +1,1 @@
+import{r as o,h as t,H as r}from"./p-dd7a128d.js";import{n as s}from"./p-dbdb9de9.js";import"@tarojs/taro";const a=class{constructor(t){o(this,t)}componentDidLoad(){s("CommentDetail",this)}render(){return t(r,null)}};export{a as taro_comment_detail_core}

@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _default={okText:'Ok',cancelText:'Cancelar',buttonText:'Boton'};exports["default"]=_default;

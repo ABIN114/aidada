@@ -1,0 +1,37 @@
+import { TextStyle, ViewStyle } from 'react-native';
+import { Theme } from '../../style';
+export interface ButtonStyles {
+    container: ViewStyle;
+    defaultHighlight: ViewStyle;
+    primaryHighlight: ViewStyle;
+    ghostHighlight: ViewStyle;
+    warningHighlight: ViewStyle;
+    wrapperStyle: ViewStyle;
+    largeRaw: ViewStyle;
+    smallRaw: ViewStyle;
+    defaultRaw: ViewStyle;
+    primaryRaw: ViewStyle;
+    ghostRaw: ViewStyle;
+    warningRaw: ViewStyle;
+    defaultDisabledRaw: ViewStyle;
+    primaryDisabledRaw: ViewStyle;
+    ghostDisabledRaw: ViewStyle;
+    warningDisabledRaw: ViewStyle;
+    defaultHighlightText: TextStyle;
+    primaryHighlightText: TextStyle;
+    ghostHighlightText: TextStyle;
+    warningHighlightText: TextStyle;
+    largeRawText: TextStyle;
+    smallRawText: TextStyle;
+    defaultRawText: TextStyle;
+    primaryRawText: TextStyle;
+    ghostRawText: TextStyle;
+    warningRawText: TextStyle;
+    defaultDisabledRawText: TextStyle;
+    primaryDisabledRawText: TextStyle;
+    ghostDisabledRawText: TextStyle;
+    warningDisabledRawText: TextStyle;
+    indicator: ViewStyle;
+}
+declare const _default: (theme: Theme) => ButtonStyles;
+export default _default;

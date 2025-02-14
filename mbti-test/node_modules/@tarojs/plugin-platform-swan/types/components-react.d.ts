@@ -1,0 +1,16 @@
+declare const Tabs = "tabs";
+declare const TabItem = "tab-item";
+declare const AnimationVideo = "animation-video";
+declare const AnimationView = "animation-view";
+declare const ArCamera = "ar-camera";
+declare const RtcRoom = "rtc-room";
+declare const RtcRoomItem = "rtc-room-item";
+declare const OpenData = "open-data";
+declare const Login = "login";
+declare const Like = "like";
+declare const CommentList = "comment-list";
+declare const CommentDetail = "comment-detail";
+declare const FollowSwan = "follow-swan";
+declare const InlinePaymentPanel = "inline-payment-panel";
+export * from '@tarojs/components/mini';
+export { Tabs, TabItem, AnimationVideo, AnimationView, ArCamera, RtcRoom, RtcRoomItem, OpenData, Login, Like, CommentList, CommentDetail, FollowSwan, InlinePaymentPanel };

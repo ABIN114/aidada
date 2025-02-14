@@ -1,0 +1,10 @@
+declare const defaultItemKey: (index: number, _itemData?: unknown) => number;
+declare function getOffsetForIndexAndAlignment({ align, containerSize, currentOffset, scrollSize, slideSize, targetOffset, }: {
+    align?: string;
+    containerSize?: number;
+    currentOffset?: number;
+    scrollSize?: number;
+    slideSize?: number;
+    targetOffset?: number;
+}): number;
+export { defaultItemKey, getOffsetForIndexAndAlignment };

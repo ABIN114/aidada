@@ -1,0 +1,11 @@
+declare const Lottie = "lottie";
+declare const Lifestyle = "lifestyle";
+declare const LifeFollow = "life-follow";
+declare const ContactButton = "contact-button";
+declare const ArCamera = "ar-camera";
+declare const PageContainer = "page-container";
+declare const ShareElement = "share-element";
+declare const RootPortal = "root-portal";
+declare const PageMeta = "page-meta";
+export * from '@tarojs/components/mini';
+export { Lottie, Lifestyle, LifeFollow, ContactButton, ArCamera, PageContainer, ShareElement, RootPortal, PageMeta };

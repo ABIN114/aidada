@@ -1,0 +1,1 @@
+import{r,h as o,H as s}from"./p-dd7a128d.js";const t=class{constructor(o){r(this,o)}render(){return o(s,null)}};export{t as taro_block_core}

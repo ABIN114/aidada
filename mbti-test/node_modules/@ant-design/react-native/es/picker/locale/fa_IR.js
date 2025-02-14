@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _default={okText:'تایید',dismissText:'لغو',extra:'لطفا انتخاب کنید'};exports["default"]=_default;

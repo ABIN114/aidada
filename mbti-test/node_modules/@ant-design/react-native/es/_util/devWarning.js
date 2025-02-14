@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _default=function _default(valid,component,message){if(__DEV__&&!valid){console.warn("Warning: [antd_mobile_rn: ".concat(component,"] ").concat(message));}};exports["default"]=_default;

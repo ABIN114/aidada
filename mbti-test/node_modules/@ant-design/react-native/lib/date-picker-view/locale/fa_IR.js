@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _default={year:'سال',month:'ماه',day:'روز',hour:'ساعت',minute:'دقیقه',am:'صبح',pm:'بعد از ظهر'};exports["default"]=_default;

@@ -1,0 +1,1 @@
+System.register(["./p-2b70c348.system.js"],(function(t){"use strict";var e,r;return{setters:[function(t){e=t.r;r=t.h}],execute:function(){var n=t("taro_label_core",function(){function t(t){e(this,t);this.for=undefined}t.prototype.render=function(){return r("label",{htmlFor:this.for},r("slot",null))};return t}())}}}));

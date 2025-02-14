@@ -1,0 +1,71 @@
+import dayjs from 'dayjs';
+import _isEmpty from 'lodash/isEmpty';
+export function handleActive(args, item) {
+    const { selectedDate } = args;
+    const { _value } = item;
+    const { start, end } = selectedDate;
+    const dayjsEnd = dayjs(end);
+    const dayjsStart = start ? dayjs(start) : dayjsEnd;
+    item.isSelected =
+        (_value === null || _value === void 0 ? void 0 : _value.isSame(dayjsEnd)) ||
+            (_value === null || _value === void 0 ? void 0 : _value.isSame(dayjsStart)) ||
+            ((_value === null || _value === void 0 ? void 0 : _value.isAfter(dayjsStart)) && (_value === null || _value === void 0 ? void 0 : _value.isBefore(dayjsEnd)));
+    item.isSelectedHead = _value === null || _value === void 0 ? void 0 : _value.isSame(dayjsStart);
+    item.isSelectedTail = _value === null || _value === void 0 ? void 0 : _value.isSame(dayjsEnd);
+    item.isToday = (_value === null || _value === void 0 ? void 0 : _value.diff(dayjs(Date.now()).startOf('day'), 'day')) === 0;
+    return item;
+}
+export function handleMarks(args, item) {
+    const { options } = args;
+    const { _value } = item;
+    const { marks } = options;
+    const markList = marks.filter(mark => _value ? dayjs(mark.value).startOf('day').isSame(_value) : false);
+    item.marks = markList.slice(0, 1);
+    return item;
+}
+// export function handleSelectedDates (args: PluginArg): Calendar.Item {
+// const { item, options } = args
+// const { _value } = item
+// const { selectedDates } = options
+// if (selectedDates.length === 0) return args
+// _forEach(selectedDates, date => {
+//   const { isSelected, isHead, isTail } = item
+//   // 如果当前 Item 已经具备了 三种状态下 无需继续判断 跳出循环
+//   if (isSelected) {
+//     return false
+//   }
+//   const { start, end } = date
+//   const dayjsEnd = dayjs(end).startOf('day')
+//   const dayjsStart = dayjs(start).startOf('day')
+//   item.isSelected =
+//     item.isSelected ||
+//     (_value.isAfter(dayjsStart) && _value.isBefore(dayjsEnd))
+//   item.isHead = item.isHead || _value.isSame(dayjsStart)
+//   item.isTail = item.isTail || _value.isSame(dayjsEnd)
+// })
+//   return item
+// }
+export function handleDisabled(args, item) {
+    const { options } = args;
+    const { _value } = item;
+    const { minDate, maxDate } = options;
+    const dayjsMinDate = dayjs(minDate);
+    const dayjsMaxDate = dayjs(maxDate);
+    item.isDisabled =
+        !!(minDate && (_value === null || _value === void 0 ? void 0 : _value.isBefore(dayjsMinDate))) ||
+            !!(maxDate && (_value === null || _value === void 0 ? void 0 : _value.isAfter(dayjsMaxDate)));
+    return item;
+}
+export function handleValid(args, item) {
+    const { options } = args;
+    const { _value } = item;
+    const { validDates } = options;
+    if (!_isEmpty(validDates)) {
+        const isInclude = validDates.some(date => _value ? dayjs(date.value).startOf('day').isSame(_value) : false);
+        item.isDisabled = !isInclude;
+    }
+    delete item._value;
+    return item;
+}
+export default [handleActive, handleMarks, handleDisabled, handleValid];
+//# sourceMappingURL=plugins.js.map

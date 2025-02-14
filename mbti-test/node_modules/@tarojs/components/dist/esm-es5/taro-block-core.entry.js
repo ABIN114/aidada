@@ -1,0 +1,1 @@
+import{r as registerInstance,h,H as Host}from"./index-ab3c86da.js";var Block=function(){function r(r){registerInstance(this,r)}r.prototype.render=function(){return h(Host,null)};return r}();export{Block as taro_block_core};

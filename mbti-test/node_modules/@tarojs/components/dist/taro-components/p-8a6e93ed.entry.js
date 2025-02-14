@@ -1,0 +1,1 @@
+import{r as t,h as o,H as r}from"./p-dd7a128d.js";import{n as s}from"./p-dbdb9de9.js";import"@tarojs/taro";const a=class{constructor(o){t(this,o)}componentDidLoad(){s("ContactButton",this)}render(){return o(r,null)}};export{a as taro_contact_button_core}

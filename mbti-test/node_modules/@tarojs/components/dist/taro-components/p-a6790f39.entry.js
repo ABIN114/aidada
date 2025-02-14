@@ -1,0 +1,1 @@
+import{r,h as t,H as o}from"./p-dd7a128d.js";import{n as s}from"./p-dbdb9de9.js";import"@tarojs/taro";const a=class{constructor(t){r(this,t)}componentDidLoad(){s("TabItem",this)}render(){return t(o,null)}};export{a as taro_tab_item_core}

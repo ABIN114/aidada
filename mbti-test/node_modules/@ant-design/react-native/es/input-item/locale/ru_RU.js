@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _default={confirmLabel:'Ок',backspaceLabel:'возврат на одну позицию',cancelKeyboardLabel:'Отменить клавиатуру'};exports["default"]=_default;

@@ -1,0 +1,1 @@
+import{r as registerInstance,h}from"./index-ab3c86da.js";var Label=function(){function r(r){registerInstance(this,r);this.for=undefined}r.prototype.render=function(){return h("label",{htmlFor:this.for},h("slot",null))};return r}();export{Label as taro_label_core};

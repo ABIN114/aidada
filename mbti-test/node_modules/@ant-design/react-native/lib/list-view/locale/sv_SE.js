@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _default={done:'Loaded',loading:'Loading',refreshableTitlePull:'Pull down refresh',refreshableTitleRelease:'Release loading',refreshableTitleRefreshing:'Loading...',noData:'No data yet'};exports["default"]=_default;

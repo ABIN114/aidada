@@ -1,0 +1,10 @@
+import { History } from "./history.js";
+import { MpaRouterConfig, SpaRouterConfig } from '../types/router';
+declare function handleAppMount(config: SpaRouterConfig | MpaRouterConfig, _: History, appId?: string): void;
+declare function handleAppMountWithTabbar(config: SpaRouterConfig | MpaRouterConfig, history: History, appId?: string): void;
+export * from "./api.js";
+export * from "./history.js";
+export { createMultiRouter } from "./router/mpa.js";
+export { createRouter } from "./router/spa.js";
+export * from "./utils/index.js";
+export { handleAppMount, handleAppMountWithTabbar };

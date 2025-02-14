@@ -1,0 +1,30 @@
+import { TextStyle, ViewStyle } from 'react-native';
+import { Theme } from '../../style';
+export interface StepsStyle {
+    head_default_s: ViewStyle;
+    head_blue_s: ViewStyle;
+    head_gray_s: ViewStyle;
+    head_red_s: ViewStyle;
+    icon_s: TextStyle;
+    head_default_l: ViewStyle;
+    head_blue_l: ViewStyle;
+    head_gray_l: ViewStyle;
+    head_red_l: ViewStyle;
+    tail_default_l: ViewStyle;
+    icon_l: TextStyle;
+    tail_default_s: ViewStyle;
+    tail_default_s_h: ViewStyle;
+    tail_gray: ViewStyle;
+    tail_blue: ViewStyle;
+    tail_error: ViewStyle;
+    tail_last: ViewStyle;
+    content_s: ViewStyle;
+    content_s_h: ViewStyle;
+    content_l: ViewStyle;
+    title_s: TextStyle;
+    description_s: TextStyle;
+    title_l: TextStyle;
+    description_l: TextStyle;
+}
+declare const _default: (theme: Theme) => StepsStyle;
+export default _default;
