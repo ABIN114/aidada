@@ -1,8 +1,6 @@
 # ai答答 - AI 答题应用平台
 
 > 作者：[程序员ABIN114](https://github.com/ABIN114)
-> 
-> 原作者（鱼答答）：[程序员鱼皮](https://github.com/liyupi)
 
 ## 项目简介
 
